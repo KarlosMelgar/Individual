@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CUERPO */
+*{
+margin:0%;
+font-family:Calibri,Arial;
+}
+body{
+	background-color:#39F;
+	}
+div.forms{
+	width:80%;
+	background-color:white;
+	border-color:black;
+	border-width:medium;
+	border-style:solid;
+	border-radius:10px;
+	}
+h2{
+	width:90%;
+	background-color:white;
+	border-color:black;
+	border-width:medium;
+	border-style:solid;
+	border-radius:10px;
+	}

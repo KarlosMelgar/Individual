@@ -1,0 +1,64 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Formulario mejorado con localStorage</title>
+	<link rel="stylesheet" href="estiloGeneral.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="estilo.css" type="text/css" media="all" />
+</head>
+<body>
+<header>
+	
+</header>
+<div id="wrapper">
+	<div id="contacto">
+		<h1>¡Contacta con nosotros!</h1>
+		<form id="formulario" method="post" action="">
+			<fieldset>
+				<label for="nombre">Nombre</label>
+				<input type="text" name="nombre" id="nombre" class="localStorage" placeholder="Tu nombre" required/>
+				<label for="correo">Email</label>
+				<input type="email" name="correo" id="correo" class="localStorage" placeholder="Tu correo" required/>
+				<label for="comentario">Comentario</label>
+				<textarea id="comentario" name="comentario" ></textarea>
+				<input type="submit" value="Enviar" />
+			</fieldset>
+		</form>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+	(function($){
+		if (hayLocalStorage()){
+			var almacenables = $('.localStorage'),
+				formulario = $('form#formulario');
+				
+			almacenables.each(function(){
+				// Recuperamos los valores
+				if ( localStorage[$(this).attr('name')] ){
+					$(this).val( localStorage[$(this).attr('name')] );
+				}
+			});
+			almacenables.on('keyup', function(){
+				// Guardamos los valores
+				localStorage[$(this).attr('name')] = $(this).val();
+			});
+			formulario.on('submit', function(e){
+				e.preventDefault();
+				//localStorage.clear();
+				alert('Ya hemos recibido los datos!');
+			});
+		}
+		function hayLocalStorage () {
+			try {
+                return 'localStorage' in window && window['localStorage'] !== null;
+            } catch (e) {
+                return false;
+            }
+		}
+		
+	})(jQuery);
+</script>
+</body>
+</html>

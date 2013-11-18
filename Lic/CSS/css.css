@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CUERPO */
+*{
+margin:0%;
+font-family:Calibri,Arial;
+font-size:22px;
+}
+div.forms{
+	width:80%;
+	background-color:white;
+	padding:5px;
+	}
+body{
+	background:url(../IMG/title.jpg) repeat center center fixed black;
+	height:100%;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+a:hover{
+	text-decoration:none;
+}
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:active{
+	text-decoration:none;
+}
+.icon
+	{
+		text-decoration: none;
+	}
+
+		.icon:before
+		{
+			text-decoration: none;
+			padding-right: 0.25em;
+			font-family: 'LigatureSymbols';
+			-webkit-text-rendering: optimizeLegibility;
+			-moz-text-rendering: optimizeLegibility;
+			-ms-text-rendering: optimizeLegibility;
+			-o-text-rendering: optimizeLegibility;
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+			-moz-font-smoothing: antialiased;
+			-ms-font-smoothing: antialiased;
+			-o-font-smoothing: antialiased;
+			font-smoothing: antialiased;
+			-webkit-font-feature-settings: "liga" 1, "dlig" 1;
+			-moz-font-feature-settings: "liga=1, dlig=1";
+			-ms-font-feature-settings: "liga" 1, "dlig" 1;
+			-o-font-feature-settings: "liga" 1, "dlig" 1;
+			font-feature-settings: "liga" 1, "dlig" 1;
+		}
+.icon-home:before   		{ content: '\E072'; }
+.icon-music:before   		{ content: '\E094'; }
+.icon-info:before   		{ content: '\E075'; }
+ul{
+	display:inline-block;
+	}
+li{
+	display:inline-block;
+	font-size:30px;
+	border:solid medium #36F;
+	background-color:#36F;
+	border-radius:10px;
+	padding:5px;
+	text-shadow:2px 2px 2px #fff;
+	}
+
+.songs{
+	width:80%;
+	background:white;
+	}
+p.parrafo{
+	padding:50px;
+	text-align:center;
+}
+p.parrafo2{
+	padding:0;
+	text-align:center;
+}
+p.parrafo3{
+	padding:10px;
+	text-align:center;
+	border:solid medium black;
+	border-radius:10px;
+	width:60%;
+	background-color:#09F;
+}
+.menu{
+	width:80%;
+	height:auto;
+	background:white;
+	font-size:18px;
+	padding:5px;
+	border-radius:10px;
+	font-family:"Courier New", Courier, monospace;
+	}
+li{
+	font-family:"Courier New", Courier, monospace;
+}
+.title{
+	color:#FFF;
+	font-size:36px;
+	font-family:"Times New Roman", Times, serif;
+	text-align:center;
+	text-transform:uppercase;
+	text-shadow: 3px 3px 3px black;
+	border-radius:10px;
+	border:solid black thin;
+	width:90%;
+	border:solid medium #FFF;
+	height:auto;
+	background:url(../IMG/Fondotitulo.jpg) repeat center;
+	box-shadow:2px 2px 2px #C06;
+	}
+td.arriba{
+	border:solid medium #000;
+	color:#FFF;
+	background:#000;
+	font-family:Calibri;
+	font-size:20px;
+	padding:5px;
+	border-radius:10px;
+	box-shadow:1px 1px 1px #C06;
+	}
+	td.abajo{
+	color:black;
+	background:#CCC;
+	font-family:Calibri;
+	font-size:18px;
+	padding:5px;
+	}
